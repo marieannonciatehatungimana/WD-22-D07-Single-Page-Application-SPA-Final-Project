@@ -81,6 +81,12 @@ nav .nav-link {
     color: #009;
 }
 
+nav .active {
+    text-decoration: underline;
+    text-decoration-color: #009;
+    text-underline-offset: 0.5rem;
+}
+
 main {
     margin-top: 0.5rem;
 }
