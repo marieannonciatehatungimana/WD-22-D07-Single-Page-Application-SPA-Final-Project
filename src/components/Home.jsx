@@ -150,9 +150,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div class="hidden-content">
-                    <a href="thank-you.html">Thanks</a>
-                </div>
             </main>
             <footer>
                 <p>&copy; 2023 Marie's Shop. Alle Rechte vorbehalten.</p>

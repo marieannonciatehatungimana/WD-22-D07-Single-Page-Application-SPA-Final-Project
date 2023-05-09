@@ -4,7 +4,7 @@ const Office = () => {
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="/">
                     <img
-                        class="home-icon"
+                        className="home-icon"
                         src="images/home/home-icon.png"
                         alt="Home"
                     />

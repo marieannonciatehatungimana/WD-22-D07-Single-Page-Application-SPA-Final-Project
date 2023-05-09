@@ -8,6 +8,7 @@ import Offers from "./components/Offers";
 import Office from "./components/Office";
 import PhotoAndVideo from "./components/PhotoAndVideo";
 import Smartphone from "./components/Smartphone";
+import ThankYou from "./components/ThankYou";
 import TvAndAudio from "./components/TvAndAudio";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <Route exact path="/games" element={<Games />} />
                 <Route exact path="/offers" element={<Offers />} />
                 <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="/thank-you" element={<ThankYou />} />
             </Routes>
         </Router>
     );
