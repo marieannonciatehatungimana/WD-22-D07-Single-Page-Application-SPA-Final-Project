@@ -39,7 +39,7 @@ const Home = () => {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/foto-and-video">
+                            <a class="nav-link" href="/photo-and-video">
                                 Foto & Video
                             </a>
                         </li>
@@ -155,7 +155,7 @@ const Home = () => {
                 </div>
             </main>
             <footer>
-                <p>&copy 2023 Marie's Shop. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2023 Marie's Shop. Alle Rechte vorbehalten.</p>
             </footer>
         </div>
     );
