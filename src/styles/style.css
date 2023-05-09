@@ -70,6 +70,7 @@ button:hover {
 
 nav {
     background-color: white;
+    vertical-align: middle;
 }
 
 nav img {
