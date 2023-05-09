@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Büro</title>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">
+                <img class="home-icon" src="images/home/home-icon.png" />
+            </a>
+            <a href="office.html">Büro</a>
+            <a href="smartphone.html">Smartphone</a>
+            <a href="tv-and-audio.html">TV & Audio</a>
+            <a href="foto-and-video.html">Foto & Video</a>
+            <a href="games.html">Spiele</a>
+            <a href="offers.html">Angebote</a>
+            <a class="active" href="contact.html">Kontakt</a>
+        </nav>
+        <main>
+            <div class="form-container">
+                <form id="forms" method="get" action="/thank-you.html">
+                    <fieldset class="rounded-border-element">
+                        <legend class="rounded-border-element">Daten</legend>
+                        <div>
+                            <label for="firstName">Vorname:</label>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                maxlength="30"
+                            />
+                        </div>
+                        <div>
+                            <label for="lastName">Nachname:</label>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                maxlength="30"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="street">Straße:</label>
+                            <input
+                                type="text"
+                                id="street"
+                                name="street"
+                                maxlength="30"
+                            />
+                        </div>
+                        <div>
+                            <label for="zipcode">PLZ:</label>
+                            <input
+                                type="text"
+                                id="zipcode"
+                                name="zipcode"
+                                maxlength="30"
+                            />
+                        </div>
+                        <div>
+                            <label for="city">Ort:</label>
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                maxlength="30"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="phone">Telefon:</label>
+                            <input
+                                type="phone"
+                                id="phone"
+                                name="phone"
+                                maxlength="30"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="email">Email:</label>
+                            <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                maxlength="30"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="comments">Kommentare:</label>
+                            <textarea
+                                id="comments"
+                                name="comments"
+                                rows="4"
+                                cols="50"
+                            ></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="button-container">
+                        <button type="submit" form="forms" value="senden">
+                            Senden
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy 2023 Marie's Shop. Alle Rechte vorbehalten.</p>
+        </footer>
+    </body>
+</html>

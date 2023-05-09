@@ -1,0 +1,118 @@
+/*
+------------------- Animations --------------------------
+*/
+
+/* W i l l k o m m e n */
+.welcome-message span {
+  text-transform: uppercase;
+}
+
+.welcome-message span:nth-child(1) {
+  animation: lighting 5000ms 0s infinite;
+}
+
+.welcome-message span:nth-child(2) {
+  animation: lighting 5000ms 0.2s infinite;
+}
+
+.welcome-message span:nth-child(3) {
+  animation: lighting 5000ms 0.4s infinite;
+}
+
+.welcome-message span:nth-child(4) {
+  animation: lighting 5000ms 0.6s infinite;
+}
+
+.welcome-message span:nth-child(5) {
+  animation: lighting 5000ms 0.8s infinite;
+}
+
+.welcome-message span:nth-child(6) {
+  animation: lighting 5000ms 1s infinite;
+}
+
+.welcome-message span:nth-child(7) {
+  animation: lighting 5000ms 1.2s infinite;
+}
+
+.welcome-message span:nth-child(8) {
+  animation: lighting 5000ms 1.4s infinite;
+}
+
+.welcome-message span:nth-child(9) {
+  animation: lighting 5000ms 1.6s infinite;
+}
+
+.welcome-message span:nth-child(10) {
+  animation: lighting 5000ms 1.8s infinite;
+}
+
+/* zu */
+.welcome-message span:nth-child(12) {
+  animation: lighting 5000ms 2s infinite;
+}
+
+.welcome-message span:nth-child(13) {
+  animation: lighting 5000ms 2.2s infinite;
+}
+
+/* unserem */
+.welcome-message span:nth-child(15) {
+  animation: lighting 5000ms 2.4s infinite;
+}
+
+.welcome-message span:nth-child(16) {
+  animation: lighting 5000ms 2.6s infinite;
+}
+
+.welcome-message span:nth-child(17) {
+  animation: lighting 5000ms 2.8s infinite;
+}
+
+.welcome-message span:nth-child(18) {
+  animation: lighting 5000ms 3s infinite;
+}
+
+.welcome-message span:nth-child(19) {
+  animation: lighting 5000ms 3.2s infinite;
+}
+
+.welcome-message span:nth-child(20) {
+  animation: lighting 5000ms 3.4s infinite;
+}
+
+.welcome-message span:nth-child(21) {
+  animation: lighting 5000ms 3.6s infinite;
+}
+
+/* Shop */
+.welcome-message span:nth-child(23) {
+  animation: lighting 5000ms 3.8s infinite;
+}
+
+.welcome-message span:nth-child(24) {
+  animation: lighting 5000ms 4s infinite;
+}
+
+.welcome-message span:nth-child(25) {
+  animation: lighting 5000ms 4.2s infinite;
+}
+
+.welcome-message span:nth-child(26) {
+  animation: lighting 5000ms 4.4s infinite;
+}
+
+@keyframes lighting {
+  0% {
+    color: grey;
+  }
+
+  10% {
+    color: #1e5799;
+    text-shadow: 0px 0px 10px #1e5799;
+  }
+
+  20% {
+    color: grey;
+  }
+}
