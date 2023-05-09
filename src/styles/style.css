@@ -1,11 +1,11 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: "AvenirNext", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "AvenirNext", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* 
@@ -13,21 +13,21 @@ html {
 */
 
 @media (min-width: 0px) and (max-width: 800px) {
-  html {
-    font-size: 10px;
-  }
+    html {
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
-  html {
-    font-size: 12px;
-  }
+    html {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 1201px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 /* 
@@ -35,140 +35,101 @@ html {
 */
 
 body {
-  width: 100%;
-  margin: auto;
-  background-color: #d3d3d3;
+    width: 100%;
+    margin: auto;
+    background-color: #d3d3d3;
 }
 
 button,
 input {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 button {
-  color: white;
-  border: 1px solid #98999b;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  outline: none;
-  cursor: pointer;
-  transition: 0.4s;
-  background-color: #589cd3;
+    color: white;
+    border: 1px solid #98999b;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #589cd3;
 }
 
 button:hover {
-  background-color: #065ba0;
+    background-color: #065ba0;
 }
 
 .rounded-border-element {
-  border-radius: 0.3rem;
+    border-radius: 0.3rem;
 }
 
 .button-container {
-  margin: 1.25rem;
+    margin: 1.25rem;
 }
 
 nav {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  background-color: #b0c4de;
-  height: auto;
-  width: 100%;
-  justify-content: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 0.625rem;
-  margin: 0.0625rem;
-
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,589cd3+48,7db9e8+100 */
-
-  /* Old browsers */
-  background: #1e5799;
-  /* FF3.6-15 */
-  background: -moz-linear-gradient(top, #1e5799 0%, #589cd3 48%, #7db9e8 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-linear-gradient(
-    top,
-    #1e5799 0%,
-    #589cd3 48%,
-    #7db9e8 100%
-  );
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background: linear-gradient(to bottom, #1e5799 0%, #589cd3 48%, #7db9e8 100%);
-  /* IE6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
-}
-
-nav .active {
-  border-bottom: 0.625rem solid white;
+    background-color: white;
 }
 
 nav img {
-  margin-left: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 main {
-  margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .home-container {
-  margin: 1.25rem;
+    margin: 1.25rem;
 }
 
 .home-container {
-  margin: 1.25rem;
+    margin: 1.25rem;
 }
 
 .home-contents {
-  border: 1px solid #1e5799;
-  padding: 1rem;
-  margin: auto;
-  background-color: white;
-  width: 90%;
-  overflow: hidden;
-  text-align: left;
+    border: 1px solid #1e5799;
+    padding: 1rem;
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    overflow: hidden;
+    text-align: left;
 }
 
 .sub-main {
-  margin: auto;
-  background-color: white;
-  width: 80%;
-  margin-bottom: 1.25rem;
+    margin: auto;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 1.25rem;
 }
 
 .home-icon {
-  width: 1.875rem;
-  height: 1.875rem;
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .welcome-message {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .item-price {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 .item-price-reduced {
-  font-size: 2em;
-  color: red;
+    font-size: 2em;
+    color: red;
 }
 
 .item-price-original {
-  font-size: 1em;
-  color: gray;
-  text-decoration: line-through;
-  padding-left: 2em;
+    font-size: 1em;
+    color: gray;
+    text-decoration: line-through;
+    padding-left: 2em;
 }
 
 .rating-1,
@@ -176,103 +137,103 @@ main {
 .rating-3,
 .rating-4,
 .rating-5 {
-  width: 100px;
+    width: 100px;
 }
 
 footer {
-  background-color: white;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  text-align: center;
-  width: 100%;
-  margin: auto;
+    background-color: white;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
+    width: 100%;
+    margin: auto;
 }
 
 .articles-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .article {
-  border: 1px solid #1e5799;
-  padding: 10px;
-  border-radius: 0.3rem;
-  margin: 5px;
-  background-color: white;
-  width: 400px;
-  overflow: hidden;
+    border: 1px solid #1e5799;
+    padding: 10px;
+    border-radius: 0.3rem;
+    margin: 5px;
+    background-color: white;
+    width: 400px;
+    overflow: hidden;
 }
 
 .thank-you-main {
-  text-align: center;
+    text-align: center;
 }
 
 .thank-you-main a {
-  color: white;
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-  line-height: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1rem;
 }
 
 .thank-you-text {
-  border: 1px solid #1e5799;
-  padding: 10px;
-  margin: auto;
-  background-color: white;
-  width: 800px;
-  overflow: hidden;
-  text-align: left;
+    border: 1px solid #1e5799;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    overflow: hidden;
+    text-align: left;
 }
 
 .form-container {
-  text-align: center;
+    text-align: center;
 }
 
 form {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 fieldset {
-  border: 1px solid #1e5799;
-  padding: 1rem;
-  margin: auto;
-  background-color: white;
-  width: 800px;
-  overflow: hidden;
-  text-align: left;
+    border: 1px solid #1e5799;
+    padding: 1rem;
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    overflow: hidden;
+    text-align: left;
 }
 
 legend {
-  background-color: #6ba4ed;
-  color: white;
-  padding: 0.8rem;
+    background-color: #6ba4ed;
+    color: white;
+    padding: 0.8rem;
 }
 
 label {
-  display: inline-block;
-  width: 50rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.3rem;
+    display: inline-block;
+    width: 50rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="phone"] {
-  padding: 0.2rem 0.3rem;
+    padding: 0.2rem 0.3rem;
 }
 
 textarea {
-  padding: 0.3rem;
-  font-family: inherit;
-  font-size: 1rem;
+    padding: 0.3rem;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
 .form-container input,
 .form-container textarea {
-  width: 40rem;
+    width: 40rem;
 }
 
 /*
@@ -280,5 +241,5 @@ textarea {
     without it, the file is skipped and the website does not work like I want. 
 */
 .hidden-content {
-  visibility: hidden;
+    visibility: hidden;
 }
