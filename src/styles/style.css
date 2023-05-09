@@ -167,6 +167,16 @@ footer {
     overflow: hidden;
 }
 
+.article-img-container {
+    min-height: 400px;
+}
+
+.article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .thank-you-main {
     text-align: center;
 }
