@@ -45,23 +45,12 @@ input {
     font-size: 1rem;
 }
 
-button {
-    color: white;
-    border: 1px solid #98999b;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    outline: none;
-    cursor: pointer;
-    transition: 0.4s;
-    background-color: #589cd3;
-}
-
-button:hover {
-    background-color: #065ba0;
-}
-
 .rounded-border-element {
     border-radius: 0.3rem;
+}
+
+.colored-border-element {
+    border: 1px solid #009;
 }
 
 .button-container {
@@ -89,6 +78,7 @@ nav .active {
 
 main {
     margin-top: 0.5rem;
+    min-height: 100vh;
 }
 
 .home-container {
@@ -100,7 +90,6 @@ main {
 }
 
 .home-contents {
-    border: 1px solid #009;
     padding: 1rem;
     margin: auto;
     background-color: white;
@@ -190,7 +179,6 @@ footer {
 }
 
 .thank-you-text {
-    border: 1px solid #1e5799;
     padding: 10px;
     margin: auto;
     background-color: white;
