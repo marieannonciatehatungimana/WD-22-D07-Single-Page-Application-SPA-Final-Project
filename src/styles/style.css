@@ -37,7 +37,7 @@ html {
 body {
     width: 100%;
     margin: auto;
-    background-color: #d3d3d3;
+    background-color: rgb(227, 230, 230);
 }
 
 button,
@@ -76,6 +76,10 @@ nav img {
     margin-left: 0.5rem;
 }
 
+nav .nav-link {
+    color: #009;
+}
+
 main {
     margin-top: 0.5rem;
 }
@@ -89,7 +93,7 @@ main {
 }
 
 .home-contents {
-    border: 1px solid #1e5799;
+    border: 1px solid #009;
     padding: 1rem;
     margin: auto;
     background-color: white;
@@ -157,7 +161,7 @@ footer {
 }
 
 .article {
-    border: 1px solid #1e5799;
+    border: 1px solid #009;
     padding: 10px;
     border-radius: 0.3rem;
     margin: 5px;
