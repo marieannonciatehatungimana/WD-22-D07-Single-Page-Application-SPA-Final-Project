@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ProductCategory from "../product/product-category";
 import ProductService from "../product/product-service";
 import Footer from "./Footer";
 import ProductData from "./ProductData";
@@ -11,7 +12,9 @@ const Office = () => {
         const productService = new ProductService();
         const fetchData = async () => {
             try {
-                const data = await productService.findByCategory("OFFICE");
+                const data = await productService.findByCategory(
+                    ProductCategory.OFFICE.name
+                );
 
                 // Set state when the data received.
                 setData(data);
