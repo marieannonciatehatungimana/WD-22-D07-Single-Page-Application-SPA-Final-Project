@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 const Smartphone = () => {
     return (
         <div>
@@ -193,6 +195,7 @@ const Smartphone = () => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 };

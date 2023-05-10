@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 const Offers = () => {
     return (
         <div>
@@ -214,6 +216,7 @@ const Offers = () => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 };

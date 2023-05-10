@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 const TvAndAudio = () => {
     return (
         <div>
@@ -196,6 +198,7 @@ const TvAndAudio = () => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 };

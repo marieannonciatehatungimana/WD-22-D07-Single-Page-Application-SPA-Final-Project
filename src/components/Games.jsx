@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 const Games = () => {
     return (
         <div>
@@ -194,6 +196,7 @@ const Games = () => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 };

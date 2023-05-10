@@ -2,7 +2,6 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Games from "./components/Games";
 import Home from "./components/Home";
 import Offers from "./components/Offers";
@@ -36,7 +35,6 @@ function App() {
                     <Route exact path="/thank-you" element={<ThankYou />} />
                 </Routes>
             </Router>
-            <Footer />
         </div>
     );
 }

@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 const PhotoAndVideo = () => {
     return (
         <div>
@@ -193,6 +195,7 @@ const PhotoAndVideo = () => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 };

@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 const ThankYou = () => {
     return (
         <div>
@@ -79,6 +81,7 @@ const ThankYou = () => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 };

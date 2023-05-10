@@ -1,4 +1,5 @@
 import products from "../product/product-list";
+import Footer from "./Footer";
 import ProductData from "./ProductData";
 
 const Office = () => {
@@ -79,6 +80,7 @@ const Office = () => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 };
