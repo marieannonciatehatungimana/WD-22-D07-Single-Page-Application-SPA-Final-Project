@@ -13,6 +13,7 @@ const ProductData = ({ product }) => {
             <p>
                 {product.name}
                 <br />
+                <br />
                 <span className="item-price">{product.price} €</span>
             </p>
             <img

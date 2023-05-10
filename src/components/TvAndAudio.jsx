@@ -196,9 +196,6 @@ const TvAndAudio = () => {
                     </div>
                 </div>
             </main>
-            <footer>
-                <p>&copy; 2023 Marie's Shop. Alle Rechte vorbehalten.</p>
-            </footer>
         </div>
     );
 };
