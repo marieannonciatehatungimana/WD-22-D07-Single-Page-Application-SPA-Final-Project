@@ -1,10 +1,28 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 
 const Contact = () => {
+    const navigate = useNavigate();
+    const [inputs, setInputs] = useState({});
+
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs((values) => ({ ...values, [name]: value }));
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        // Redirect and pass data.
+        navigate("/thank-you", { state: { ...inputs } });
+    };
+
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="/">
+            <nav className="navbar navbar-expand-lg navbar-light">
+                <a className="navbar-brand" href="/">
                     <img
                         className="home-icon"
                         src="images/home/home-icon.png"
@@ -12,7 +30,7 @@ const Contact = () => {
                     />
                 </a>
                 <button
-                    class="navbar-toggler"
+                    className="navbar-toggler"
                     type="button"
                     data-toggle="collapse"
                     data-target="#navbarTogglerDemo02"
@@ -20,43 +38,43 @@ const Contact = () => {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/office">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li className="nav-item">
+                            <a className="nav-link" href="/office">
                                 Büro
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/smartphone">
+                        <li className="nav-item">
+                            <a className="nav-link" href="/smartphone">
                                 Smartphone
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/tv-and-audio">
+                        <li className="nav-item">
+                            <a className="nav-link" href="/tv-and-audio">
                                 TV & Audio
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/photo-and-video">
+                        <li className="nav-item">
+                            <a className="nav-link" href="/photo-and-video">
                                 Foto & Video
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/games">
+                        <li className="nav-item">
+                            <a className="nav-link" href="/games">
                                 Spiele
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/offers">
+                        <li className="nav-item">
+                            <a className="nav-link" href="/offers">
                                 Angebote
                             </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/contact">
+                        <li className="nav-item active">
+                            <a className="nav-link" href="/contact">
                                 Kontakt
                             </a>
                         </li>
@@ -64,81 +82,83 @@ const Contact = () => {
                 </div>
             </nav>
             <main>
-                <div class="form-container">
-                    <form id="forms" method="get" action="/thank-you.html">
-                        <fieldset class="rounded-border-element">
-                            <legend class="rounded-border-element">
+                <div className="form-container">
+                    <form onSubmit={handleSubmit}>
+                        <fieldset className="rounded-border-element">
+                            <legend className="rounded-border-element">
                                 Ihre Daten
                             </legend>
                             <div>
-                                <label for="firstName">Vorname:</label>
+                                <label htmlFor="firstName">Vorname:</label>
                                 <input
                                     type="text"
                                     id="firstName"
                                     name="firstName"
-                                    maxlength="30"
+                                    value={inputs.firstName || ""}
+                                    onChange={handleChange}
+                                    maxLength="30"
                                 />
                             </div>
                             <div>
-                                <label for="lastName">Nachname:</label>
+                                <label htmlFor="lastName">Nachname:</label>
                                 <input
                                     type="text"
                                     id="lastName"
                                     name="lastName"
-                                    maxlength="30"
+                                    maxLength="30"
                                 />
                             </div>
 
                             <div>
-                                <label for="street">Straße:</label>
+                                <label htmlFor="street">Straße:</label>
                                 <input
                                     type="text"
                                     id="street"
                                     name="street"
-                                    maxlength="30"
+                                    maxLength="30"
                                 />
                             </div>
                             <div>
-                                <label for="zipcode">PLZ:</label>
+                                <label htmlFor="zipcode">PLZ:</label>
                                 <input
                                     type="text"
                                     id="zipcode"
                                     name="zipcode"
-                                    maxlength="30"
+                                    maxLength="30"
                                 />
                             </div>
                             <div>
-                                <label for="city">Ort:</label>
+                                <label htmlFor="city">Ort:</label>
                                 <input
                                     type="text"
                                     id="city"
                                     name="city"
-                                    maxlength="30"
+                                    maxLength="30"
                                 />
                             </div>
 
                             <div>
-                                <label for="phone">Telefon:</label>
+                                <label htmlFor="phone">Telefon:</label>
                                 <input
                                     type="phone"
                                     id="phone"
                                     name="phone"
-                                    maxlength="30"
+                                    maxLength="30"
                                 />
                             </div>
 
                             <div>
-                                <label for="email">Email:</label>
+                                <label htmlFor="email">Email:</label>
                                 <input
                                     type="text"
                                     id="email"
                                     name="email"
-                                    maxlength="30"
+                                    maxLength="30"
                                 />
                             </div>
 
                             <div>
-                                <label for="comments">Kommentare:</label>
+                                <label htmlFor="comments">Kommentare:</label>
                                 <textarea
                                     id="comments"
                                     name="comments"
@@ -147,11 +167,10 @@ const Contact = () => {
                                 ></textarea>
                             </div>
                         </fieldset>
-                        <div class="button-container">
+                        <div className="button-container">
                             <button
-                                type="button"
-                                class="btn btn-primary"
-                                form="forms"
+                                type="submit"
+                                className="btn btn-primary"
                                 value="senden"
                             >
                                 Senden
