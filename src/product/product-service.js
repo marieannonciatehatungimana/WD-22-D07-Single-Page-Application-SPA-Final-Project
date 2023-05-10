@@ -1,7 +1,14 @@
+import products from "./product-list";
+
 /**
  *  ProductService class, um aktionen an Produkten durchzuführen.
  */
 class ProductService {
+    // Suche nach Kategorie (Verwendung von Array.filter()).
+    async findByCategory(category) {
+        return products.filter((p) => p.category === category);
+    }
+
     // Nach Name sortieren (Verwendung von Array.sort()).
     sortByName(products) {
         products.sort(function (a, b) {
@@ -19,7 +26,7 @@ class ProductService {
     }
 
     // Suche nach Name - vollständig oder nur ein Substring (Verwendung von Array.filter()).
-    searchByName(products, nameSubstring) {
+    async findByName(products, nameSubstring) {
         const result = products.filter(
             (p) =>
                 p.name.toLowerCase().indexOf(nameSubstring.toLowerCase()) !== -1

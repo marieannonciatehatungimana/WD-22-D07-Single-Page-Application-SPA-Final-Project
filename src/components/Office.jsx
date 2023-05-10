@@ -1,9 +1,28 @@
-import products from "../product/product-list";
+import React, { useEffect, useState } from "react";
+import ProductService from "../product/product-service";
 import Footer from "./Footer";
 import ProductData from "./ProductData";
 
 const Office = () => {
-    const filteredProducts = products.filter((p) => p.category === "OFFICE");
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        // Fetch data.
+        const productService = new ProductService();
+        const fetchData = async () => {
+            try {
+                const data = await productService.findByCategory("OFFICE");
+
+                // Set state when the data received.
+                setData(data);
+            } catch (error) {
+                console.log(error);
+                setData([]);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <div>
@@ -70,7 +89,7 @@ const Office = () => {
             <main>
                 <div className="sub-main rounded-border-element">
                     <div className="articles-container">
-                        {filteredProducts?.map((item, index) => {
+                        {data?.map((item, index) => {
                             return (
                                 <div key={index}>
                                     <ProductData product={item} />
