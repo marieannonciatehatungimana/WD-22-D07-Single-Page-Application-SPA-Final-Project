@@ -12,7 +12,7 @@ Die App-/Website-Codes sind in zwei Hauptteile unterteilt: UI (React Components)
 
 Die Hauptkomponenten sind:
 
--   App: Root Komponente und enthält Routing-Definitionen.
+-   `App`: Root Komponente und enthält Routing-Definitionen.
 -   Komponenten für jede Artikelkategorie.
 -   `ProductData`: Wird von den Kategorienkomponenten verwendet, um Produktdetails anzuzeigen.
 -   `Contact`: Wird zur Erfassung von Benutzerdaten verwendet. Anwendung von
