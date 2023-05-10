@@ -23,7 +23,7 @@ class Product {
         this.imageLink = imageLink; // Link zum Bild.
         this.imageWidth = imageWidth; // Bildbreite.
         this.imageHeight = imageHeight; // Bildhöhe.
-        this.rating = rating;
+        this.rating = rating; // Rating.
     }
 }
 
