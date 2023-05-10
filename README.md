@@ -18,6 +18,7 @@ Die Hauptkomponenten sind:
 -   `Contact`: Wird zur Erfassung von Benutzerdaten verwendet. Anwendung von
     -   Forms
     -   useNavigate: Formulardaten werden an eine andere Komponente übergeben
+- Nav: Für die Seitennavigation.
 -   Footer: Fußzeile der Website.
 
 Die hervorzuhebenden React-Funktionen der App sind:
