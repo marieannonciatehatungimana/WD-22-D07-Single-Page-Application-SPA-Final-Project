@@ -3,6 +3,7 @@
  */
 class Product {
     constructor(
+        id,
         name,
         price,
         category,
@@ -14,6 +15,7 @@ class Product {
         imageHeight,
         rating
     ) {
+        this.id = id;
         this.name = name; // Name
         this.price = price; // Preis
         this.category = category; // Kategorie (z.B. Büro, Smartphone, TV und Audio,...)
