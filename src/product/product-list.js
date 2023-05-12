@@ -1,4 +1,5 @@
 import Product from "./product-class";
+import ProductCategory from "./product-category";
 
 /**
  *  The list of products.
@@ -8,7 +9,7 @@ const products = [
     new Product(
         "Böttcher-AG Ordner, A4, breit, 80mm, Karton, schwarz, Wolkenmarmor",
         3.57,
-        "OFFICE",
+        ProductCategory.OFFICE.name,
         20,
         false,
         null,
@@ -20,7 +21,7 @@ const products = [
     new Product(
         "HP LaserJet M110w Wireless Black & White",
         169.88,
-        "OFFICE",
+        ProductCategory.OFFICE.name,
         20,
         false,
         null,
@@ -32,7 +33,7 @@ const products = [
     new Product(
         "Büroklammerspender 2705199, magnetisch",
         4.75,
-        "OFFICE",
+        ProductCategory.OFFICE.name,
         20,
         false,
         null,
@@ -44,7 +45,7 @@ const products = [
     new Product(
         "Igepa Navigator Universal Papier A4, 80g/m², 500 Blatt",
         5.78,
-        "OFFICE",
+        ProductCategory.OFFICE.name,
         20,
         false,
         null,
@@ -56,7 +57,7 @@ const products = [
     new Product(
         "Herlitz Briefablage 64014",
         11.89,
-        "OFFICE",
+        ProductCategory.OFFICE.name,
         20,
         false,
         null,
@@ -68,7 +69,7 @@ const products = [
     new Product(
         "50 Schneider Kugelschreiber K15 farbsortiert Schreibfarbe blau",
         12.61,
-        "OFFICE",
+        ProductCategory.OFFICE.name,
         20,
         false,
         null,
