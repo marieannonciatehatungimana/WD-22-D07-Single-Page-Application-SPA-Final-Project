@@ -2,7 +2,7 @@
  *  Product categories.
  */
 class ProductCategory {
-    static FOTO_AND_VIDEO = new ProductCategory("FOTO_AND_VIDEO");
+    static PHOTO_AND_VIDEO = new ProductCategory("PHOTO_AND_VIDEO");
     static GAMES = new ProductCategory("GAMES");
     static OFFERS = new ProductCategory("OFFERS");
     static OFFICE = new ProductCategory("OFFICE");
