@@ -6,6 +6,7 @@ import Product from "./product-class";
  */
 const products = [
     // ---------------- Office products. --------------------------------
+
     new Product(
         "51af5d6f-eccf-4c6e-b98d-3ce805c92009",
         "Böttcher-AG Ordner, A4, breit, 80mm, Karton, schwarz, Wolkenmarmor",
@@ -86,6 +87,7 @@ const products = [
     ),
 
     // ---------------- Photo and video products. --------------------------------
+
     new Product(
         "46a18709-917a-4168-ac4e-a5dd3cc57341",
         "CANON EOS 2000D Kit Spiegelreflexkamera",
@@ -163,6 +165,87 @@ const products = [
         390,
         250,
         1
+    ),
+
+    // ---------------- Games products. --------------------------------
+
+    new Product(
+        "43af128a-62f6-4156-8354-e731dee8bac3",
+        "Minecraft: Nintendo Switch Edition",
+        23.99,
+        ProductCategory.GAMES.name,
+        20,
+        false,
+        null,
+        "images/games/minecraft.jpg",
+        190,
+        300,
+        5
+    ),
+    new Product(
+        "0d99b850-d464-4dba-a657-18a50a52d66b",
+        "Nintendo Switch Konsole",
+        208.0,
+        ProductCategory.GAMES.name,
+        20,
+        false,
+        null,
+        "images/games/nintendo-switch.jpg",
+        348,
+        225,
+        2
+    ),
+    new Product(
+        "d71d9433-432e-44d1-a82e-103249134a9f",
+        "Celebrate Holidays",
+        55.87,
+        ProductCategory.GAMES.name,
+        20,
+        false,
+        null,
+        "images/games/holidays.jpg",
+        300,
+        150,
+        4
+    ),
+    new Product(
+        "d6d35cb5-2bc8-479a-870d-136b47da17b6",
+        "Xbox 360 - Konsole Core weiß",
+        70.78,
+        ProductCategory.GAMES.name,
+        20,
+        false,
+        null,
+        "images/games/xbox-konsole.jpg",
+        180,
+        230,
+        2
+    ),
+    new Product(
+        "13d72979-0fd3-410c-a242-16e863739ab2",
+        "DDiswoee Xbox 360 Wireless Controller, Wireless Game Controller",
+        32.84,
+        ProductCategory.GAMES.name,
+        20,
+        false,
+        null,
+        "images/games/ddi-controller.jpg",
+        300,
+        210,
+        3
+    ),
+    new Product(
+        "565491d1-ab3b-4ac3-a242-dbb203df0b38",
+        "Xbox Series S 512GB - Fortnite",
+        504.88,
+        ProductCategory.GAMES.name,
+        20,
+        false,
+        null,
+        "images/games/x-box.jpg",
+        300,
+        300,
+        5
     ),
 ];
 

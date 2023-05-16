@@ -26,7 +26,7 @@ const PhotoAndVideo = () => {
         };
 
         fetchData();
-    }, []); // Empty dependency array ensures that data is fetched only once (on initial render).
+    }, []);
 
     return (
         <div>
