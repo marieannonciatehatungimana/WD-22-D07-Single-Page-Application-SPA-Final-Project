@@ -247,6 +247,84 @@ const products = [
         300,
         5
     ),
+    new Product(
+        "9a3066c9-4471-4fd6-ba2b-9de00e835d9f",
+        "Samsung Galaxy S22 5G",
+        129.9,
+        ProductCategory.SMART_PHONE.name,
+        20,
+        false,
+        null,
+        "images/smartphones/samsung-galaxy-s22-5g.png",
+        400,
+        300,
+        5
+    ),
+    new Product(
+        "3adf80c5-268b-45ec-8ea2-22c5cfd03e8d",
+        "iPhone 7 32 GB - Schwarz",
+        199.0,
+        ProductCategory.SMART_PHONE.name,
+        20,
+        false,
+        null,
+        "images/smartphones/iphone-7.jpg",
+        170,
+        250,
+        2
+    ),
+    new Product(
+        "8bc6b610-13b4-46f2-a62a-e35f1d8a7609",
+        "Huawei P Smart 2021 4GB/128GB",
+        301.88,
+        ProductCategory.SMART_PHONE.name,
+        20,
+        false,
+        null,
+        "images/smartphones/huawei-p-smart.jpg",
+        300,
+        300,
+        4
+    ),
+    new Product(
+        "0a39ece0-ce52-4b14-a7b2-85ced977d683",
+        "Google Pixel 6",
+        508.24,
+        ProductCategory.SMART_PHONE.name,
+        20,
+        false,
+        null,
+        "images/smartphones/google-pixel-6.png",
+        200,
+        300,
+        4
+    ),
+    new Product(
+        "9fc8392e-c0da-4278-b564-f3b50b70ac53",
+        "Xiaomi 11T Pro 5G",
+        250.71,
+        ProductCategory.SMART_PHONE.name,
+        15,
+        false,
+        null,
+        "images/smartphones/xiaomi-11t.png",
+        200,
+        300,
+        3
+    ),
+    new Product(
+        "c73b6f5d-c890-4802-b0e6-20dca8193600",
+        "iPhone 13 mini mit 4 GB",
+        799.99,
+        ProductCategory.SMART_PHONE.name,
+        5,
+        false,
+        null,
+        "images/smartphones/iPhone-13-mini.png",
+        250,
+        300,
+        3
+    ),
 ];
 
 export default products;

@@ -1,139 +1,46 @@
+import React, { useEffect, useState } from "react";
+import ProductCategory from "../product/product-category";
+import ProductService from "../product/product-service";
 import Footer from "./Footer";
 import Nav from "./Nav";
+import ProductData from "./ProductData";
 
 const Smartphone = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        // Fetch data.
+        const productService = new ProductService();
+        const fetchData = async () => {
+            try {
+                const data = await productService.findByCategory(
+                    ProductCategory.SMART_PHONE.name
+                );
+
+                // Set state when the data received.
+                setData(data);
+            } catch (error) {
+                console.log(error);
+                setData([]);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <div>
             <Nav pathName={"smartphone"} />
             <main>
-                <div class="sub-main rounded-border-element">
-                    <div class="articles-container">
-                        <div class="article">
-                            <div class="article-img-container">
-                                <img
-                                    src="images/smartphones/samsung-galaxy-s22-5g.png"
-                                    width="400px"
-                                    height="300px"
-                                />
-                            </div>
-                            <br />
-                            <p>
-                                Samsung Galaxy S22 5G
-                                <br />
-                                <br />
-                                <span class="item-price">129,90 €</span>
-                            </p>
-                            <br />
-                            <img
-                                src="images/ratings/5-star.jpg"
-                                class="rating-5"
-                            />
-                        </div>
-                        <div class="article">
-                            <div class="article-img-container">
-                                <img
-                                    src="images/smartphones/iphone-7.jpg"
-                                    width="170px"
-                                    height="250px"
-                                />
-                            </div>
-                            <br />
-                            <p>
-                                iPhone 7 32 GB - Schwarz
-                                <br />
-                                <br />
-                                <span class="item-price">199,00 €</span>
-                            </p>
-                            <br />
-                            <img
-                                src="images/ratings/2-star.jpg"
-                                class="rating-2"
-                            />
-                        </div>
-                        <div class="article">
-                            <div class="article-img-container">
-                                <img
-                                    src="images/smartphones/huawei-p-smart.jpg"
-                                    width="300px"
-                                    height="300px"
-                                />
-                            </div>
-                            <br />
-                            <p>
-                                Huawei P Smart 2021 4GB/128GB
-                                <br />
-                                <br />
-                                <span class="item-price">301,88 €</span>
-                            </p>
-                            <br />
-                            <img
-                                src="images/ratings/4-star.jpg"
-                                class="rating-4"
-                            />
-                        </div>
-                        <div class="article">
-                            <div class="article-img-container">
-                                <img
-                                    src="images/smartphones/google-pixel-6.png"
-                                    width="200px"
-                                    height="300px"
-                                />
-                            </div>
-                            <br />
-                            <p>
-                                Google Pixel 6
-                                <br />
-                                <br />
-                                <span class="item-price">508,24 €</span>
-                            </p>
-                            <br />
-                            <img
-                                src="images/ratings/4-star.jpg"
-                                class="rating-4"
-                            />
-                        </div>
-                        <div class="article">
-                            <div class="article-img-container">
-                                <img
-                                    src="images/smartphones/xiaomi-11t.png"
-                                    width="200px"
-                                    height="300px"
-                                />
-                            </div>
-                            <br />
-                            <p>
-                                Xiaomi 11T Pro 5G
-                                <br />
-                                <br />
-                                <span class="item-price">250,71 €</span>
-                            </p>
-                            <br />
-                            <img
-                                src="images/ratings/3-star.jpg"
-                                class="rating-3"
-                            />
-                        </div>
-                        <div class="article">
-                            <div class="article-img-container">
-                                <img
-                                    src="images/smartphones/iPhone-13-mini.png"
-                                    width="250px"
-                                    height="300px"
-                                />
-                            </div>
-                            <br />
-                            <p>
-                                iPhone 13 mini mit 4 GB
-                                <br />
-                                <br />
-                                <span class="item-price">799,99 €</span>
-                            </p>
-                            <br />
-                            <img
-                                src="images/ratings/3-star.jpg"
-                                class="rating-3"
-                            />
-                        </div>
+                <div className="sub-main rounded-border-element">
+                    <div className="articles-container">
+                        {data?.map((item, index) => {
+                            return (
+                                <div key={index}>
+                                    <ProductData product={item} />
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </main>
