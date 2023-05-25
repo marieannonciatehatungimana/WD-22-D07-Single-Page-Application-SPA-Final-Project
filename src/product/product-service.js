@@ -35,6 +35,11 @@ class ProductService {
         return result;
     }
 
+    // Finde Produkte mit reduziertem Preis.
+    async findReducedProducts() {
+        return products.filter((p) => p.isReduced);
+    }
+
     // Export der Produkte mit nur bestimmten properties (z.B. nur "name" und "price") (Verwendung von Array.map(), computed properties).
     export(products, properties) {
         return products.map((p) => {
