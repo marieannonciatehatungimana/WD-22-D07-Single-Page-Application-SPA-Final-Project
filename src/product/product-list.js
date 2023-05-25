@@ -325,6 +325,84 @@ const products = [
         300,
         3
     ),
+    new Product(
+        "2b76f0c6-8291-4a01-a028-4cf62edb2085",
+        "Samsung GU43AU7199U LED-Fernseher",
+        745.57,
+        ProductCategory.TV_AND_AUDIO.name,
+        5,
+        false,
+        null,
+        "images/tv-and-audio/tv-samsung.jpg",
+        367,
+        235,
+        5
+    ),
+    new Product(
+        "a830ae9c-8371-4367-aa70-eb93ce6ce40d",
+        "Tragbarer CD-Player",
+        39.9,
+        ProductCategory.TV_AND_AUDIO.name,
+        5,
+        false,
+        null,
+        "images/tv-and-audio/cd-player.jpg",
+        300,
+        210,
+        3
+    ),
+    new Product(
+        "ddaae64d-0286-4575-b579-894cb5c3c729",
+        "LG 43UP81009LR LCD-LED Fernseher (108 cm/43 Zoll)",
+        348.33,
+        ProductCategory.TV_AND_AUDIO.name,
+        5,
+        false,
+        null,
+        "images/tv-and-audio/lg-tv.jpg",
+        367,
+        242,
+        4
+    ),
+    new Product(
+        "bb82bf9a-5f6f-44e7-95a3-2b21a51ac389",
+        "Audio-Technica AE 5400",
+        225.88,
+        ProductCategory.TV_AND_AUDIO.name,
+        5,
+        false,
+        null,
+        "images/tv-and-audio/microphone.jpg",
+        351,
+        198,
+        4
+    ),
+    new Product(
+        "bc97ad84-82c8-48de-ba5a-cb6ffd9bab97",
+        "Telefunken D43F553M1 LED-Fernseher (108 cm/43 Zoll, Full HD)",
+        975.57,
+        ProductCategory.TV_AND_AUDIO.name,
+        5,
+        false,
+        null,
+        "images/tv-and-audio/telefunken.jpg",
+        367,
+        235,
+        5
+    ),
+    new Product(
+        "e041ca86-60a1-422e-a6d8-e193166a633f",
+        `Sharp 50" 4K ULTRA HD ANDROID TV`,
+        634.77,
+        ProductCategory.TV_AND_AUDIO.name,
+        5,
+        false,
+        null,
+        "images/tv-and-audio/sharp.jpg",
+        380,
+        250,
+        4
+    ),
 ];
 
 export default products;
