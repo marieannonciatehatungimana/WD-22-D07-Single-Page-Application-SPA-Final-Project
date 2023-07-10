@@ -61,7 +61,7 @@ const products = [
         180,
         230,
         4,
-        false
+        true
     ),
     new Product(
         "41c1d06a-1f42-4f99-95f4-8ad1fa64d4e4",
@@ -162,7 +162,7 @@ const products = [
         375,
         274,
         4,
-        false
+        true
     ),
     new Product(
         "75b15638-7f64-4e79-aa9e-897f1f05a608",
@@ -276,7 +276,7 @@ const products = [
         400,
         300,
         5,
-        false
+        true
     ),
     new Product(
         "3adf80c5-268b-45ec-8ea2-22c5cfd03e8d",

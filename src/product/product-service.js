@@ -40,6 +40,11 @@ class ProductService {
         return products.filter((p) => p.isReduced);
     }
 
+    // Finde Produkte, die Top-Angebote sind.
+    async findTopOffers() {
+        return products.filter((p) => p.isTopOffer);
+    }
+
     // Export der Produkte mit nur bestimmten properties (z.B. nur "name" und "price") (Verwendung von Array.map(), computed properties).
     export(products, properties) {
         return products.map((p) => {
