@@ -10,12 +10,28 @@ const ProductData = ({ product }) => {
                 />
             </div>
             <br />
-            <p>
-                {product.name}
-                <br />
-                <br />
-                <span className="item-price">{product.price} €</span>
-            </p>
+            {!product.isReduced && (
+                <p>
+                    {product.name}
+                    <br />
+                    <br />
+                    <span className="item-price">{product.price} €</span>
+                </p>
+            )}
+            {product.isReduced && (
+                <p>
+                    {product.name}
+                    <br />
+                    <br />
+                    <span className="item-price-reduced">
+                        {product.reducedPrice} €
+                    </span>
+                    <span className="item-price-original">
+                        Statt: {product.price} €
+                    </span>
+                </p>
+            )}
+
             <img
                 src={`images/ratings/${product.rating}-star.jpg`}
                 className={`rating-${product.rating}`}
