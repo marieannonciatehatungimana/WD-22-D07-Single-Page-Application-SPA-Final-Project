@@ -9,7 +9,7 @@ const Nav = ({ pathName }) => {
             >
                 <img
                     className="home-icon"
-                    src="images/home/home-icon.png"
+                    src="/public/images/home/home-icon.png"
                     alt="Home"
                 />
             </a>
