@@ -13,7 +13,8 @@ class Product {
         imageLink,
         imageWidth,
         imageHeight,
-        rating
+        rating,
+        isTopOffer
     ) {
         this.id = id;
         this.name = name; // Name
@@ -26,6 +27,7 @@ class Product {
         this.imageWidth = imageWidth; // Bildbreite.
         this.imageHeight = imageHeight; // Bildhöhe.
         this.rating = rating; // Rating.
+        this.isTopOffer = isTopOffer;
     }
 }
 

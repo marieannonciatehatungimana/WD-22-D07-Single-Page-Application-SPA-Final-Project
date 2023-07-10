@@ -12,7 +12,7 @@ const Home = () => {
         const productService = new ProductService();
         const fetchData = async () => {
             try {
-                const data = await productService.findReducedProducts();
+                const data = await productService.findTopOffers();
 
                 // Set state when the data received.
                 setData(data);

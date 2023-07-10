@@ -18,7 +18,8 @@ const products = [
         "images/office/folder.jpg",
         150,
         300,
-        5
+        5,
+        false
     ),
     new Product(
         "512020c2-ae21-4db3-aa30-5f22aff9cdfd",
@@ -31,7 +32,8 @@ const products = [
         "images/office/hp-printer.png",
         300,
         210,
-        2
+        2,
+        false
     ),
     new Product(
         "90d1e4ed-41b0-472a-a374-4280ce626552",
@@ -44,7 +46,8 @@ const products = [
         "images/office/paper-clips.jpg",
         280,
         300,
-        4
+        4,
+        false
     ),
     new Product(
         "b0f01a96-b74a-44fc-b27c-612b9fdafbb8",
@@ -57,7 +60,8 @@ const products = [
         "images/office/igepa-papier.jpg",
         180,
         230,
-        4
+        4,
+        false
     ),
     new Product(
         "41c1d06a-1f42-4f99-95f4-8ad1fa64d4e4",
@@ -70,7 +74,8 @@ const products = [
         "images/office/herlitz-ablagekorb.jpg",
         300,
         210,
-        3
+        3,
+        false
     ),
     new Product(
         "f6cbde88-2c76-4dbe-b254-56a380e29756",
@@ -83,7 +88,8 @@ const products = [
         "images/office/schneider-kugelschreiber.jpg",
         300,
         300,
-        1
+        1,
+        false
     ),
 
     // ---------------- Photo and video products. --------------------------------
@@ -99,7 +105,8 @@ const products = [
         "images/foto-and-video/canon.png",
         350,
         270,
-        3
+        3,
+        false
     ),
     new Product(
         "6c1b8b2b-67c7-4597-9686-d8c017114d43",
@@ -112,7 +119,8 @@ const products = [
         "images/foto-and-video/rollei- kompaktes.jpg",
         190,
         300,
-        5
+        5,
+        false
     ),
     new Product(
         "1cb5223a-899c-4ce5-b2fd-030b815d6721",
@@ -125,7 +133,8 @@ const products = [
         "images/foto-and-video/sony-hdc-5500.jpeg",
         372,
         224,
-        4
+        4,
+        false
     ),
     new Product(
         "ad18ce25-efad-4afe-ad36-af977f2bdd6f",
@@ -138,7 +147,8 @@ const products = [
         "images/foto-and-video/fotolicht-lumen.jpg",
         300,
         300,
-        5
+        5,
+        false
     ),
     new Product(
         "23e0db81-e5c9-4a86-9bc2-8b19673fac87",
@@ -151,7 +161,8 @@ const products = [
         "images/foto-and-video/camera-lens.jpg",
         375,
         274,
-        4
+        4,
+        false
     ),
     new Product(
         "75b15638-7f64-4e79-aa9e-897f1f05a608",
@@ -164,7 +175,8 @@ const products = [
         "images/foto-and-video/classic.jpg",
         390,
         250,
-        1
+        1,
+        false
     ),
 
     // ---------------- Games products. --------------------------------
@@ -180,7 +192,8 @@ const products = [
         "images/games/minecraft.jpg",
         190,
         300,
-        5
+        5,
+        false
     ),
     new Product(
         "0d99b850-d464-4dba-a657-18a50a52d66b",
@@ -193,7 +206,8 @@ const products = [
         "images/games/nintendo-switch.jpg",
         348,
         225,
-        2
+        2,
+        false
     ),
     new Product(
         "d71d9433-432e-44d1-a82e-103249134a9f",
@@ -206,7 +220,8 @@ const products = [
         "images/games/holidays.jpg",
         300,
         150,
-        4
+        4,
+        false
     ),
     new Product(
         "d6d35cb5-2bc8-479a-870d-136b47da17b6",
@@ -219,7 +234,8 @@ const products = [
         "images/games/xbox-konsole.jpg",
         180,
         230,
-        2
+        2,
+        false
     ),
     new Product(
         "13d72979-0fd3-410c-a242-16e863739ab2",
@@ -245,7 +261,8 @@ const products = [
         "images/games/x-box.jpg",
         300,
         300,
-        5
+        5,
+        false
     ),
     new Product(
         "9a3066c9-4471-4fd6-ba2b-9de00e835d9f",
@@ -258,7 +275,8 @@ const products = [
         "images/smartphones/samsung-galaxy-s22-5g.png",
         400,
         300,
-        5
+        5,
+        false
     ),
     new Product(
         "3adf80c5-268b-45ec-8ea2-22c5cfd03e8d",
@@ -271,7 +289,8 @@ const products = [
         "images/smartphones/iphone-7.jpg",
         170,
         250,
-        2
+        2,
+        false
     ),
     new Product(
         "8bc6b610-13b4-46f2-a62a-e35f1d8a7609",
@@ -284,7 +303,8 @@ const products = [
         "images/smartphones/huawei-p-smart.jpg",
         300,
         300,
-        4
+        4,
+        false
     ),
     new Product(
         "0a39ece0-ce52-4b14-a7b2-85ced977d683",
@@ -297,7 +317,8 @@ const products = [
         "images/smartphones/google-pixel-6.png",
         200,
         300,
-        4
+        4,
+        false
     ),
     new Product(
         "9fc8392e-c0da-4278-b564-f3b50b70ac53",
@@ -310,7 +331,8 @@ const products = [
         "images/smartphones/xiaomi-11t.png",
         200,
         300,
-        3
+        3,
+        false
     ),
     new Product(
         "c73b6f5d-c890-4802-b0e6-20dca8193600",
@@ -336,7 +358,8 @@ const products = [
         "images/tv-and-audio/tv-samsung.jpg",
         367,
         235,
-        5
+        5,
+        false
     ),
     new Product(
         "a830ae9c-8371-4367-aa70-eb93ce6ce40d",
@@ -349,7 +372,8 @@ const products = [
         "images/tv-and-audio/cd-player.jpg",
         300,
         210,
-        3
+        3,
+        false
     ),
     new Product(
         "ddaae64d-0286-4575-b579-894cb5c3c729",
@@ -362,7 +386,8 @@ const products = [
         "images/tv-and-audio/lg-tv.jpg",
         367,
         242,
-        4
+        4,
+        false
     ),
     new Product(
         "bb82bf9a-5f6f-44e7-95a3-2b21a51ac389",
@@ -375,7 +400,8 @@ const products = [
         "images/tv-and-audio/microphone.jpg",
         351,
         198,
-        4
+        4,
+        false
     ),
     new Product(
         "bc97ad84-82c8-48de-ba5a-cb6ffd9bab97",
@@ -388,7 +414,8 @@ const products = [
         "images/tv-and-audio/telefunken.jpg",
         367,
         235,
-        5
+        5,
+        false
     ),
     new Product(
         "e041ca86-60a1-422e-a6d8-e193166a633f",
@@ -401,7 +428,8 @@ const products = [
         "images/tv-and-audio/sharp.jpg",
         380,
         250,
-        4
+        4,
+        false
     ),
 ];
 
